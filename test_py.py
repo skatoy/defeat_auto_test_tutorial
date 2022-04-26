@@ -3,9 +3,7 @@ from selenium import webdriver
 import time
 import unittest
 
-
-class test_onetry(unittest.TestCase):
-    def test_onetry_one(self):
+def test_py_one():
         try:
             link = "http://suninjuly.github.io/registration1.html"
             browser = webdriver.Chrome()
@@ -37,9 +35,9 @@ class test_onetry(unittest.TestCase):
         finally:
            time.sleep(10)
             # закрываем браузер после всех манипуляций
-           browser.quit()
+        browser.quit()
 
-    def test_onetry_two(self):
+def test_py_two(self):
         try:
             link = "http://suninjuly.github.io/registration2.html"
             browser = webdriver.Chrome()
@@ -75,7 +73,7 @@ class test_onetry(unittest.TestCase):
         finally:
            time.sleep(10)
             # закрываем браузер после всех манипуляций
-           browser.quit()
+        browser.quit()
 
-    if __name__ == "__main__":
-        pytest.main()
+if __name__ == "__main__":
+    pytest.main()
